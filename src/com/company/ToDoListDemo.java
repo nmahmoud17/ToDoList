@@ -7,7 +7,7 @@ public class ToDoListDemo {
 
     public static void main(String[] args) {
 
-        ToDoList myToDoList = new ToDoList();
+        ToDoList myList = new ToDoList();
 
         System.out.println("Please enter the description of your to-do item: ");
         String userInputDescription = myScanner.nextLine();
@@ -16,7 +16,7 @@ public class ToDoListDemo {
         String userInputStatus = myScanner.nextLine();
 
         ToDoListItem myItem = new ToDoListItem(userInputDescription, userInputStatus);
-
+        myList.addToList(myItem);
         myItem.printDetail();
 
     }
