@@ -27,6 +27,12 @@ public class ToDoListItem {
 
     }
 
+    public void printDetail() {
+        System.out.println("\n");
+        System.out.println("This item description is: " + itemName);
+        System.out.println("This item state is: " + itemState);
+    }
+
 
 
 }
